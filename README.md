@@ -179,7 +179,7 @@ Checkout our [wikipage](https://github.com/geraldgsh/avl-pixel-perfect/wiki) for
 
 #### Live Demo
 
-[Demo]()
+[Demo](https://avl-pixel-perfect.netlify.app)
 
 #### Getting Started
 
@@ -191,7 +191,7 @@ Web browser like Chrome, Mozilla or similar.
 
 ### Original Project Source
 
-[Link](https://avancevl.github.io/en/recruit/sample_frontenddev.html
+[Link](https://avancevl.github.io/en/recruit/sample_frontenddev.html)
 
 ### Github Repo
 
