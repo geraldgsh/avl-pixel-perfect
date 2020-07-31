@@ -37,11 +37,41 @@
   }
 }
 
-.col, .col-md-3, .col-md-9 {
+.one-third, .three-quarter {
   color: gray;
+  border: solid black 1px;
+  min-height: 100vh;
+}
+
+.mt-35 {
+  margin-top: 1.4em;
+}
+
+.lines {
   border: solid black 1px;
 }
 
-.container {
-  min-height: 100vh;
+.bottomline {
+  border-bottom: solid black 1px;
+}
+
+.vertical-text {
+  writing-mode: sideways-lr;
+}
+
+.bttn {
+  margin: 10px !important;
+}
+
+.content {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  color: orange;
+  font-weight: 700;
 }

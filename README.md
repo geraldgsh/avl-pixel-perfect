@@ -1,113 +1,226 @@
+#avl-pixel-perfect
+React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Snapshot
 
-In the project directory, you can run:
+![]()
 
-### `yarn start`
+### Introduction.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Tools
 
-### `yarn test`
+* Node.js
+* React
+* React-DOM
+* React-Create-App
+* npm
+* CSS
+* ES6
+* Webpack
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Objectives
 
-### `yarn build`
+### Linter Setup
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone file [content](https://github.com/microverseinc/linters-config/tree/master/javascript) into root directory (except for readme.md)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Install ESLint on Linux environment using the following commands
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install Node Version Manager to update NodeJS + NPM.
 
-### `yarn eject`
+```sh
+$curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+$export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+$[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run the following command to verify installation;
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+$ command -v 
+nvm
+```
 
-## Learn More
+To download, compile, and install the latest release of node, do this.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+nvm install node
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Source [here](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Code Splitting
+Please do the following **steps in this order**:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### Set-up ESlint in your local env - it will help you to find style errors
 
-### Analyzing the Bundle Size
+Go project folder using WSL environment and initiate NPM with following command
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```sh
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
 
-### Making a Progressive Web App
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
 
-### Advanced Configuration
+Press ^C at any time to quit.
+package name: (avl-pixel-perfect)
+version: (1.0.0)
+description: Bookstore Application
+entry point: (webpack.config.js) src/index.js
+test command:
+git repository: (https://github.com/geraldgsh/avl-pixel-perfect.git)
+keywords:
+author: Gerald Goh
+license: (ISC)
+About to write to /package.json:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geraldgsh/avl-pixel-perfect.git"
+  },
+  "author": "Gerald Goh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geraldgsh/avl-pixel-perfect/issues"
+  },
+  "homepage": "https://github.com/geraldgsh/avl-pixel-perfect#readme"
+}
+```
 
-### Deployment
+Command above will generate a "package.json" file for ESlint work off from.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Install ESlint with following command
 
-### `yarn build` fails to minify
+1. Run `npm install eslint eslint-config-airbnb --save-dev` (not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+2. Run `npx eslint --init`.
 
-https://www.npmjs.com/package/bootstrap
-https://www.npmjs.com/package/react-bootstrap
+3. Make sure you select the following options when prompted.
 
-npm install --save react-bootstrap bootstrap
+    `? How would you like to use ESLint?` To check syntax, find problems, and enforce code style
 
-+ react-bootstrap@1.2.2
-+ bootstrap@4.5.0
-updated 2 packages and audited 1749 packages in 24.491s
+    `? What type of modules does your project use?` JavaScript modules (import/export)
 
-npm install --save node-sass
+    `? Which framework does your project use?`  React
 
-https://www.npmjs.com/package/node-sass
+    `? Does your project use Typescript`  No
 
-+ node-sass@4.14.1
-updated 1 package and audited 1749 packages in 40.394s
+    `? Where does your code run?`     Browser
 
-https://www.npmjs.com/package/@fortawesome/react-fontawesome
+    `? How would you like to define a style for your project?` Use a popular style guide
 
-$ npm i --save @fortawesome/free-solid-svg-icons
+    `? Which style guide do you want to follow?`      Airbnb
 
-+ @fortawesome/free-solid-svg-icons@5.14.0
-added 1 package from 6 contributors and audited 1748 packages in 28.079s
+    `? What format do you want your config file to be in?`       JSON
 
-$ npm i --save @fortawesome/fontawesome-svg-core
+    `The config that you've selected requires the following dependencies: ? Would you like to install them now with npm?`       Yes
 
-+ @fortawesome/fontawesome-svg-core@1.2.30
-added 2 packages from 6 contributors and audited 1747 packages in 20.874s
+4. Copy the contents of [.eslintrc.json](./.eslintrc.json) to the newly generated `.eslintrc.json` overwritting the previous content.
 
-$ npm i --save @fortawesome/react-fontawesome
+5. **Do not make any changes in config files - they represent style guidelines that you share with your tem - which is a group of all Microverse students.**
+    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 
-+ @fortawesome/react-fontawesome@0.1.11
-updated 1 package and audited 1749 packages in 18.877s
+6. Double check your `./src` folder for any extra unnecesary `.eslint` config files that might have been generated as this might cause an issue with stickler when you create your Pull Request later on.
 
-https://www.npmjs.com/package/react-rainbow-components
+7. Run `npx eslint .`.
 
-$ npm install react-rainbow-components --save
+8. Fix linter errors.
 
-> styled-components@4.4.1 postinstall /mnt/d/Movie/avl-pixel-perfect/node_modules/styled-components
-> node ./scripts/postinstall.js || exit 0
+9. **IMPORTANT NOTE**: feel free to research [auto-correct options for ESlint](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
-Use styled-components at work? Consider supporting our development efforts at https://opencollective.com/styled-components
+## Troubleshooting
 
-+ react-rainbow-components@1.16.0
-added 35 packages from 26 contributors and audited 1784 packages in 41.032s
+1. All config files are in my repo but Stickler does not work.
+
+   - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
+
+   ![screenshot](https://github.com/microverseinc/linters-config/blob/master/assets/images/stickler_app_config.png)
+
+   - Try to add a new commit to your Pull Request. Stickler should detect changes in your repo and start checking your code.
+
+2. `while scanning for the next token found character '\t' that cannot start any token` error.
+   - Please make sure that you used spaces not tabs for indentation.
+
+3. Check if someone else has had similar problem before [here](https://questions.microverse.org/c/linters-stickler).
+   Please make sure that you used spaces not tabs for indentation.
+
+4. Stickler does not work and nothing helps 💥 - run eslint in your local env and correct all errors. **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
+
+### Future Features
+
+
+### To begin
+
+1. Clone Repo
+2. 'npm install' to install dependencies
+3. `yarn start` or 'npm start' on terminal
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Wiki
+
+Checkout our [wikipage](https://github.com/geraldgsh/avl-pixel-perfect/wiki) for more details. 
+
+#### Live Demo
+
+[Demo]()
+
+#### Getting Started
+
+Clone repo and open index.html with your favorite browser.
+
+#### Prerequisites
+
+Web browser like Chrome, Mozilla or similar.
+
+### Original Project Source
+
+[Link](https://avancevl.github.io/en/recruit/sample_frontenddev.html
+
+### Github Repo
+
+https://github.com/geraldgsh/avl-pixel-perfect
+
+👤 **Author**
+
+Github: [geraldgsh](https://github.com/geraldgsh)
+
+Twitter: [geraldgsh](https://twitter.com/geraldgsh)
+
+Linkedin: [Gerald Goh](https://www.linkedin.com/geraldgsh)
+
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/geraldgsh/
+avl-pixel-perfect/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
