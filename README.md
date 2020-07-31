@@ -72,12 +72,12 @@ Use `npm install <pkg>` afterwards to install a package and
 save it as a dependency in the package.json file.
 
 Press ^C at any time to quit.
-package name: (firebase-react-chat)
+package name: (avl-pixel-perfect)
 version: (1.0.0)
 description: Bookstore Application
 entry point: (webpack.config.js) src/index.js
 test command:
-git repository: (https://github.com/geraldgsh/firebase-react-chat.git)
+git repository: (https://github.com/geraldgsh/avl-pixel-perfect.git)
 keywords:
 author: Gerald Goh
 license: (ISC)
@@ -93,14 +93,14 @@ About to write to /package.json:
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geraldgsh/firebase-react-chat.git"
+    "url": "git+https://github.com/geraldgsh/avl-pixel-perfect.git"
   },
   "author": "Gerald Goh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/geraldgsh/firebase-react-chat/issues"
+    "url": "https://github.com/geraldgsh/avl-pixel-perfect/issues"
   },
-  "homepage": "https://github.com/geraldgsh/firebase-react-chat#readme"
+  "homepage": "https://github.com/geraldgsh/avl-pixel-perfect#readme"
 }
 ```
 
@@ -209,7 +209,7 @@ Linkedin: [Gerald Goh](https://www.linkedin.com/geraldgsh)
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/geraldgsh/
-firebase-react-chat/issues).
+avl-pixel-perfect/issues).
 
 ## Show your support
 
