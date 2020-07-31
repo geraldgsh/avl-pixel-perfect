@@ -111,3 +111,26 @@ Use styled-components at work? Consider supporting our development efforts at ht
 
 + react-rainbow-components@1.16.0
 added 35 packages from 26 contributors and audited 1784 packages in 41.032s
+
+https://www.npmjs.com/package/react-circular-progressbar
+
+$ npm install --save react-circular-progressbar
+
++ react-circular-progressbar@2.0.3
+added 1 package from 1 contributor and audited 1785 packages in 44.635s
+
+$ npm install --save jquery popper.js @popperjs/core @popperjs/core
+
++ jquery@3.5.1
++ @popperjs/core@2.4.4
++ @popperjs/core@2.4.4
++ popper.js@1.16.1
+updated 3 packages and audited 1787 packages in 10.684s
+
+$npm i -S prop-types
+
++ prop-types@15.7.2
+updated 1 package and audited 1788 packages in 33.824s
+
+66 packages are looking for funding
+  run `npm fund` for detail
