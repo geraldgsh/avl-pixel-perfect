@@ -66,3 +66,48 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+https://www.npmjs.com/package/bootstrap
+https://www.npmjs.com/package/react-bootstrap
+
+npm install --save react-bootstrap bootstrap
+
++ react-bootstrap@1.2.2
++ bootstrap@4.5.0
+updated 2 packages and audited 1749 packages in 24.491s
+
+npm install --save node-sass
+
+https://www.npmjs.com/package/node-sass
+
++ node-sass@4.14.1
+updated 1 package and audited 1749 packages in 40.394s
+
+https://www.npmjs.com/package/@fortawesome/react-fontawesome
+
+$ npm i --save @fortawesome/free-solid-svg-icons
+
++ @fortawesome/free-solid-svg-icons@5.14.0
+added 1 package from 6 contributors and audited 1748 packages in 28.079s
+
+$ npm i --save @fortawesome/fontawesome-svg-core
+
++ @fortawesome/fontawesome-svg-core@1.2.30
+added 2 packages from 6 contributors and audited 1747 packages in 20.874s
+
+$ npm i --save @fortawesome/react-fontawesome
+
++ @fortawesome/react-fontawesome@0.1.11
+updated 1 package and audited 1749 packages in 18.877s
+
+https://www.npmjs.com/package/react-rainbow-components
+
+$ npm install react-rainbow-components --save
+
+> styled-components@4.4.1 postinstall /mnt/d/Movie/avl-pixel-perfect/node_modules/styled-components
+> node ./scripts/postinstall.js || exit 0
+
+Use styled-components at work? Consider supporting our development efforts at https://opencollective.com/styled-components
+
++ react-rainbow-components@1.16.0
+added 35 packages from 26 contributors and audited 1784 packages in 41.032s

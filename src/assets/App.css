@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.col, .col-md-3, .col-md-9 {
+  color: gray;
+  border: solid black 1px;
+}
+
+.container {
+  min-height: 100vh;
+}
